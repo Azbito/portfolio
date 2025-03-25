@@ -4,9 +4,22 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+	@apply bg-white dark:bg-gray-950;
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+	@media (prefers-color-scheme: dark) {
+		color-scheme: dark;
+	}
+}
+
+@keyframes slide-top-to-bottom-anim {
+	0% {
+		transform: translateY(-100vh);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.slide-top-to-bottom-anim {
+	animation: slide-top-to-bottom-anim 0.5s ease-in-out;
 }
