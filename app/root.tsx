@@ -9,6 +9,9 @@ import type { LinksFunction } from "@remix-run/node"
 
 import "./tailwind.css"
 import { TranslationProvider } from "./contexts/translation"
+import { PopUpProvider } from "./contexts/popup"
+import { PopUp } from "./components/popup"
+import { usePopUp } from "./hooks/usePopUp"
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -44,12 +47,20 @@ export function Layout({ children }: { children: React.ReactNode }) {
 	)
 }
 
+function PopUpComponent() {
+	const { popup, closePopUp } = usePopUp()
+	return <PopUp popup={popup} closePopUp={closePopUp} />
+}
+
 export default function App() {
 	return (
 		<TranslationProvider>
-			<div className="bg-background font-jetbrains">
-				<Outlet />
-			</div>
+			<PopUpProvider>
+				<div className="bg-background font-jetbrains">
+					<Outlet />
+				</div>
+				<PopUpComponent />
+			</PopUpProvider>
 		</TranslationProvider>
 	)
 }

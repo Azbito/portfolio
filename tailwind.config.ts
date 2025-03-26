@@ -13,6 +13,7 @@ export default {
 				github: "#273436",
 				linkedin: "#0077b5",
 				email: "#6a4c9c",
+				accent: "#e810a7",
 			},
 			fontFamily: {
 				jetbrains: ['"JetBrains Mono"', "monospace"],
