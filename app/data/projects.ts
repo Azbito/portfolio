@@ -99,10 +99,6 @@ export const projects: ProjectsProps[] = [
 		private: false,
 		links: [
 			{
-				name: "Front-end",
-				href: "https://github.com/Azbito/forum-frontend",
-			},
-			{
 				name: "Back-end",
 				href: "https://github.com/Azbito/forum-jwt-study",
 			},

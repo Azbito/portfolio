@@ -5,7 +5,7 @@ export const en = {
 	successCopy: "E-mail copied successfully!",
 	homeMetadataDescription: "Developer portfolio website",
 	introduction: "Hello! My name is Thiago!",
-	history: `<p>I am a developer with experience in C++ for <b class="text-primary">software development.</b> In the <b class="text-primary">front-end</b>, I work with ReactJS, NextJS, Remix, and Vue, always focused on enhancing the user experience with simple and functional interfaces. In the <b class="text-primary">backend</b>, I use tools like Fastify, PostgreSQL, and MySQL to create solutions that meet project needs. Additionally, in <b class="text-primary">mobile app development</b> with React Native, I always strive to deliver something practical and accessible.<br/><br/> I also work with services like Docker for containerization and other services such as AWS, Firebase, and Cloudflare, always seeking the best tools for each situation.</p>`,
+	history: `<p>I am a developer with experience in C++ for <b class="text-primary">software development.</b> In the <b class="text-primary">front-end</b>, I work with ReactJS, NextJS, Remix, and Vue, always focused on enhancing the user experience with simple and functional interfaces. In the <b class="text-primary">backend</b>, I use tools like Fastify, PostgreSQL, and MySQL to create solutions that meet project needs. Additionally, in <b class="text-primary">mobile app development</b> with React Native and Flutter, I always strive to deliver something practical and accessible.<br/><br/> I also work with services like Docker for containerization and other services such as AWS, Firebase, and Cloudflare, always seeking the best tools for each situation.</p>`,
 	iAm: "I am",
 	role: "developer",
 	contactMe: "Contact",

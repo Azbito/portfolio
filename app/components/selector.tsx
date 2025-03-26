@@ -55,9 +55,8 @@ export function LanguageSelector({
 					!showOptions ? "top-4 right-4" : "-top-32 -right-32",
 				)}
 			>
-				<img src={Globe} height={32} width={32} />
+				<img src={Globe} alt="" height={32} width={32} />
 			</button>
-			c
 		</>
 	)
 }

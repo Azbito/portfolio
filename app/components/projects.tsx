@@ -48,10 +48,21 @@ export function Projects() {
 								</Link>
 							)}
 							{project?.links &&
+								project?.links.length > 1 &&
 								project.links.map((link) => (
 									<Link key={link.name} to={link.href}>
 										<i className="text-blue-500">
 											{link.name} - {t("sourceCode")}
+										</i>
+									</Link>
+								))}
+
+							{project?.links &&
+								project?.links.length === 1 &&
+								project.links.map((link) => (
+									<Link key={link.name} to={link.href}>
+										<i className="text-blue-500">
+											{t("sourceCode")}
 										</i>
 									</Link>
 								))}
