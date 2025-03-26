@@ -10,6 +10,7 @@ export default {
 				primary: "#ff01bb",
 				background: "#121212",
 				foreground: "#151515",
+				"second-foreground": "#404040",
 				github: "#273436",
 				linkedin: "#0077b5",
 				email: "#6a4c9c",

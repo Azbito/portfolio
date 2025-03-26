@@ -20,7 +20,7 @@ export const technologies: Technologies[] = [
 		icon: `${TECHNOLOGIES_ASSETS_PATH}ts`,
 	},
 	{
-		id: 3,
+		id: 423,
 		name: "Assembly x86",
 		icon: "https://assets.exercism.org/tracks/x86-64-assembly.svg",
 	},
@@ -39,8 +39,8 @@ export const technologies: Technologies[] = [
 		name: "Lua",
 		icon: `${TECHNOLOGIES_ASSETS_PATH}lua`,
 	},
-	{ id: 10, name: "C#", icon: `${TECHNOLOGIES_ASSETS_PATH}cs` },
-	{ id: 12, name: "Dart", icon: `${TECHNOLOGIES_ASSETS_PATH}dart` },
+	{ id: 120, name: "C#", icon: `${TECHNOLOGIES_ASSETS_PATH}cs` },
+	{ id: 19, name: "Dart", icon: `${TECHNOLOGIES_ASSETS_PATH}dart` },
 	{ id: 11, name: "Flutter", icon: `${TECHNOLOGIES_ASSETS_PATH}flutter` },
 	{
 		id: 6,
@@ -78,7 +78,7 @@ export const technologies: Technologies[] = [
 		icon: `${TECHNOLOGIES_ASSETS_PATH}aws`,
 	},
 	{
-		id: 11,
+		id: 154,
 		name: "Cloudflare",
 		icon: `${TECHNOLOGIES_ASSETS_PATH}cloudflare`,
 	},

@@ -20,6 +20,7 @@ export const TranslationContext = createContext<
 
 export function TranslationProvider({ children }: { children: ReactNode }) {
 	const [language, setLanguage] = useState<Language>("pt")
+	const [firstLoad, setFirstLoad] = useState<boolean>(true)
 
 	const handleLanguageWatcher = useCallback(() => {
 		if (typeof window !== "undefined") {
@@ -27,11 +28,25 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
 		}
 	}, [language])
 
+	const handleFirstLoadLanguage = useCallback(() => {
+		const storedLanguage = localStorage.getItem("language")
+		if (storedLanguage) {
+			setLanguage(storedLanguage as Language)
+		}
+		setFirstLoad(false)
+	}, [])
+
 	useEffect(() => {
-		if (typeof window !== "undefined") {
+		if (firstLoad) {
+			handleFirstLoadLanguage()
+		}
+	}, [firstLoad, handleFirstLoadLanguage])
+
+	useEffect(() => {
+		if (!firstLoad) {
 			handleLanguageWatcher()
 		}
-	}, [handleLanguageWatcher])
+	}, [firstLoad, language, handleLanguageWatcher])
 
 	return (
 		<TranslationContext.Provider value={{ language, setLanguage }}>

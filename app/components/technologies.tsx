@@ -12,6 +12,7 @@ export function Technologies() {
 			<div className="flex-wrap flex items-center justify-center gap-5 border-[1px] p-16 border-primary rounded-xl mt-16 w-[80%]">
 				{technologies.map((tech) => (
 					<div
+						key={tech.id}
 						className="bg-foreground flex items-center justify-center flex-col py-6 w-[10rem]
                         transition-transform hover:translate-y-[-5px] rounded-lg shadow-xl"
 					>

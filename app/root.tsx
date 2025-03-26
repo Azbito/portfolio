@@ -12,6 +12,8 @@ import { TranslationProvider } from "./contexts/translation"
 import { PopUpProvider } from "./contexts/popup"
 import { PopUp } from "./components/popup"
 import { usePopUp } from "./hooks/usePopUp"
+import { LanguageSelector } from "./components/selector"
+import { useTranslation } from "./hooks/useTranslation"
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -52,6 +54,11 @@ function PopUpComponent() {
 	return <PopUp popup={popup} closePopUp={closePopUp} />
 }
 
+function LanguageComponent() {
+	const { language, setLanguage } = useTranslation()
+	return <LanguageSelector language={language} setLanguage={setLanguage} />
+}
+
 export default function App() {
 	return (
 		<TranslationProvider>
@@ -59,6 +66,7 @@ export default function App() {
 				<div className="bg-background font-jetbrains">
 					<Outlet />
 				</div>
+				<LanguageComponent />
 				<PopUpComponent />
 			</PopUpProvider>
 		</TranslationProvider>

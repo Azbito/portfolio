@@ -9,6 +9,7 @@ export function useTranslation() {
 		return {
 			t: (key: TranslationKeys) => key,
 			setLanguage: () => {},
+			language: "pt",
 		}
 	}
 
@@ -16,6 +17,7 @@ export function useTranslation() {
 
 	return {
 		t: (key: TranslationKeys) => translations[language][key],
+		language,
 		setLanguage,
 	}
 }
