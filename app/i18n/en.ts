@@ -29,7 +29,7 @@ Review and correction of translations in English and French.
 <br/>
 Improvement of the launcher, developed in Electron, with security measures against cheats.`,
 	"project-chaosify-editor": `
-Game map editor that generates maps from Finite State Machine (FSM) files and collision data from SMP files for the GFChaos game.
+Game map editor that generates maps from FSM files and collision data from SMP files for the GFChaos game.
 <br/>
 <br/>
 FEATURES:
