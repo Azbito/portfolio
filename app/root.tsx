@@ -56,7 +56,15 @@ function PopUpComponent() {
 
 function LanguageComponent() {
 	const { language, setLanguage } = useTranslation()
-	return <LanguageSelector language={language} setLanguage={setLanguage} />
+
+	type LanguagesProps = "pt" | "en"
+
+	return (
+		<LanguageSelector
+			language={language as LanguagesProps}
+			setLanguage={setLanguage}
+		/>
+	)
 }
 
 export default function App() {

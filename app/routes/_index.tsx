@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo } from "react"
+import { useState, useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import type { MetaFunction } from "@remix-run/node"
 import { HomeHeader } from "~/components/home-header"

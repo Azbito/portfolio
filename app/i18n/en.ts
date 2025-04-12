@@ -15,6 +15,8 @@ export const en = {
 	site: "Website",
 	padlock: "Padlock",
 	privateSourceCode: "The source code for this project is private",
+	"project-ans":
+		"A comprehensive data processing system designed to handle and analyze ANS data.",
 	"project-gfchaos": `Developer of systems for a private MMORPG server, focused on implementing new features, bug fixes, and performance optimization.
 <br/>
 Development and maintenance of front-end interfaces for the GFChaos MMORPG server, ensuring an optimized experience for approximately 100 players online daily.

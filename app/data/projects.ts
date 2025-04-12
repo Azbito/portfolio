@@ -104,4 +104,18 @@ export const projects: ProjectsProps[] = [
 			},
 		],
 	},
+	{
+		title: "ANS Data Processor",
+		key: "project-ans",
+		private: false,
+		technologies: [
+			"Docker",
+			"Python",
+			"VueJS",
+			"Cloudflare R2",
+			"PostgreSQL",
+			"FastAPI",
+		],
+		href: "https://github.com/Azbito/ans-data-processor",
+	},
 ]

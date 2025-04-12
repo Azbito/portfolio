@@ -39,6 +39,11 @@ export const technologies: Technologies[] = [
 		name: "Lua",
 		icon: `${TECHNOLOGIES_ASSETS_PATH}lua`,
 	},
+	{
+		id: 543,
+		name: "Python",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}py`,
+	},
 	{ id: 120, name: "C#", icon: `${TECHNOLOGIES_ASSETS_PATH}cs` },
 	{ id: 19, name: "Dart", icon: `${TECHNOLOGIES_ASSETS_PATH}dart` },
 	{ id: 11, name: "Flutter", icon: `${TECHNOLOGIES_ASSETS_PATH}flutter` },
@@ -58,6 +63,11 @@ export const technologies: Technologies[] = [
 		icon: `${TECHNOLOGIES_ASSETS_PATH}remix`,
 	},
 	{
+		id: 52,
+		name: "VueJS",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}vue`,
+	},
+	{
 		id: 8,
 		name: "NodeJS",
 		icon: `${TECHNOLOGIES_ASSETS_PATH}nodejs`,
@@ -66,6 +76,11 @@ export const technologies: Technologies[] = [
 		id: 9,
 		name: "Fastify",
 		icon: Fastify,
+	},
+	{
+		id: 904,
+		name: "FastAPI",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}fastapi`,
 	},
 	{
 		id: 34,
@@ -88,8 +103,28 @@ export const technologies: Technologies[] = [
 		icon: `${TECHNOLOGIES_ASSETS_PATH}docker`,
 	},
 	{
+		id: 122,
+		name: "Prisma",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}prisma`,
+	},
+	{
 		id: 104,
 		name: "PostgreSQL",
 		icon: `${TECHNOLOGIES_ASSETS_PATH}postgres`,
+	},
+	{
+		id: 105,
+		name: "SQLite",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}sqlite`,
+	},
+	{
+		id: 104,
+		name: "MySQL",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}mysql`,
+	},
+	{
+		id: 102,
+		name: "DynamoDB",
+		icon: `${TECHNOLOGIES_ASSETS_PATH}dynamodb`,
 	},
 ]

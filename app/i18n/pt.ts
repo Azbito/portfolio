@@ -14,6 +14,8 @@ export const pt = {
 	sourceCode: "Código fonte",
 	site: "Site",
 	padlock: "Cadeado",
+	"project-ans":
+		"Um completo de processamento de dados projetado para lidar e analisar dados da ANS.",
 	privateSourceCode: "O código fonte desse projeto é privado",
 	"project-gfchaos": `Desenvolvedor de sistemas para um servidor MMORPG privado, focado na implementação de novos recursos, correções de bugs e otimização de desempenho.
 <br/>
