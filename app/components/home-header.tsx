@@ -1,8 +1,6 @@
 import { useTranslation } from "~/hooks/useTranslation"
 import { Button } from "./button"
-import { useState } from "react"
 import { links } from "~/data/links"
-import { cn } from "~/utils/cn"
 import { Link } from "@remix-run/react"
 import { usePopUp } from "~/hooks/usePopUp"
 import { copyToClipboard } from "~/utils/clipboard"
@@ -14,7 +12,7 @@ const renderButtons = (handlePopUp: (content: string | undefined) => void) => {
 				<Button
 					onClick={() => handlePopUp(link.content)}
 					key={link.id}
-					className={`bg-${link.color} w-[10rem]`}
+					className={`bg-${link.color} w-[10rem] rounded-full`}
 				>
 					{link.name}
 				</Button>
@@ -25,7 +23,7 @@ const renderButtons = (handlePopUp: (content: string | undefined) => void) => {
 
 		return (
 			<Link to={link.href} key={link.id}>
-				<Button className={`bg-${link.color} w-[10rem]`}>
+				<Button className={`bg-${link.color} w-[10rem] rounded-full`}>
 					{link.name}
 				</Button>
 			</Link>
@@ -50,17 +48,15 @@ export function HomeHeader() {
 	}
 
 	return (
-		<div className="flex min-h-[80vh] bg-foreground slide-top-to-bottom-anim max-[1250px]:flex-col max-[1250px]:pt-36">
+		<div className="flex max-w-[80vw] rounded-xl border border-accent min-h-[600px] bg-foreground max-[1250px]:flex-col max-[1250px]:pt-36">
 			<div className="flex-[4] flex justify-center flex-col gap-8 pt-0 p-8 pl-[10vw]">
 				<h1 className="text-4xl max-[1250px]:text-center">
 					{t("introduction")}
 				</h1>
 				<div className="flex flex-col gap-4 items-start max-[1250px]:items-center">
-					<div className="border p-4">
 						<b className="text-primary text-2xl italic">
 							{t("role")}
 						</b>
-					</div>
 				</div>
 			</div>
 			<div className="flex-[4] pr-[8rem]  max-[1250px]:px-8 flex flex-col">

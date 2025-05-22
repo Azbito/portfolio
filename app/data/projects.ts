@@ -95,7 +95,7 @@ export const projects: ProjectsProps[] = [
 	{
 		title: "Fórum",
 		key: "project-forum",
-		technologies: ["Fastify", "NextJS", "Typescript", "Prisma", "AWS"],
+		technologies: ["Fastify", "Typescript", "Prisma", "AWS"],
 		private: false,
 		links: [
 			{
@@ -117,5 +117,18 @@ export const projects: ProjectsProps[] = [
 			"FastAPI",
 		],
 		href: "https://github.com/Azbito/ans-data-processor",
+	},	{
+		title: "Metropole garage",
+		key: "project-metropole",
+		private: false,
+		technologies: [
+			"Docker",
+			"MySQL",
+			"Typescript",
+      "Lua",
+      "FiveM",
+      "ReactJS",
+		],
+		href: "https://github.com/Azbito/metropole-garage",
 	},
 ]

@@ -78,7 +78,9 @@ export default function Index() {
 
 	return (
 		<div className="flex flex-col min-h-screen">
-			<HomeHeader />
+      <div className="w-full flex items-center justify-center mt-32">
+        <HomeHeader />
+      </div>
 
 			<motion.div
 				ref={technologiesRef}
