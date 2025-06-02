@@ -133,5 +133,6 @@
 		font-family: "Space Grotesk", sans-serif;
 		color: var(--color-text);
 		padding: 1rem;
+		word-break: break-word;
 	}
 }

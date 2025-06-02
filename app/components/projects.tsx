@@ -58,7 +58,7 @@ export function Projects() {
 					{t("projects")}
 				</h3>
 			</BlurFade>
-			<div className="flex flex-wrap items-stretch justify-center gap-4">
+			<div className="flex flex-wrap items-stretch justify-start gap-4">
 				{projects.map((item) => (
 					<BlurFade key={item.key}>
 						<ProjectCard
