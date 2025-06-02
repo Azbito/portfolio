@@ -25,6 +25,7 @@ export const pt = {
 	"project-ans":
 		"Um completo de processamento de dados projetado para lidar e analisar dados da ANS.",
 	privateSourceCode: "O código fonte desse projeto é privado",
+	skills: "Habilidades",
 	"project-bood": `Responsável pelo desenvolvimento de interfaces dinâmicas;<br />
 Manutenção de código;<br />
 Responsável por ensinar desenvolvedores estagiários a programar;<br />

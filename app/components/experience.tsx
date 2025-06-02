@@ -77,10 +77,11 @@ function ProfessionalCard({
 
 			<motion.div
 				className="flex flex-col gap-4"
-				initial={{ opacity: 0, height: 0 }}
+				initial={{ opacity: 0, height: 0, visibility: "hidden" }}
 				animate={{
 					opacity: expanded ? 1 : 0,
 					height: expanded ? "auto" : 0,
+					visibility: expanded ? "visible" : "hidden",
 				}}
 				transition={{
 					duration: expanded ? 0.7 : 0.3,
