@@ -6,12 +6,23 @@ import { useMediaQuery } from "~/hooks/useMediaQuery"
 import { Card } from "./ui/card"
 import { SafeHTML } from "./safe-html"
 import { cn } from "~/lib/utils"
+import { useMediaQuery } from "~/hooks/useMediaQuery"
+import { Card } from "./ui/card"
+import { SafeHTML } from "./safe-html"
+import { cn } from "~/lib/utils"
 
 export function Intro() {
 	const { t } = useTranslation()
 	const mobile = useMediaQuery("(max-width: 1000px)")
+	const mobile = useMediaQuery("(max-width: 1000px)")
 
 	return (
+		<div className="flex gap-4 w-full max-[1000px]:flex-col max-w-screen-xl">
+			{!mobile && (
+				<BlurFade delay={0.4}>
+					<Avatar src={Me} />
+				</BlurFade>
+			)}
 		<div className="flex gap-4 w-full max-[1000px]:flex-col max-w-screen-xl">
 			{!mobile && (
 				<BlurFade delay={0.4}>
@@ -58,7 +69,14 @@ export function Intro() {
 							{t("about")}
 						</h3>
 						<Card className="w-full mt-2 p-8 ">
+						<h3 className="text-3xl font-bold mt-4">
+							{t("about")}
+						</h3>
+						<Card className="w-full mt-2 p-8 ">
 							<SafeHTML
+								className={cn(
+									mobile ? "text-start" : "text-end",
+								)}
 								className={cn(
 									mobile ? "text-start" : "text-end",
 								)}
