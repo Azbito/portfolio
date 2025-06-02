@@ -1,4 +1,4 @@
-import { projects, ProjectsProps } from "~/_data/projects"
+import { projects } from "~/_data/projects"
 import { Badge } from "./ui/badge"
 import { Card } from "./ui/card"
 import { GitBranch } from "lucide-react"
@@ -13,7 +13,12 @@ function ProjectCard({
 	description,
 	technologies,
 	isPrivate,
-}: ProjectsProps & { description: string; isPrivate: string }) {
+}: {
+	title: string
+	technologies: string[]
+	description: string
+	isPrivate: boolean
+}) {
 	const { t } = useTranslation()
 
 	return (
@@ -48,10 +53,14 @@ export function Projects() {
 
 	return (
 		<div className="flex flex-col">
-			<h3 className="font-bold text-3xl mt-32 mb-16">{t("projects")}</h3>
-			<div className="flex flex-wrap gap-4">
-				{projects.map((item, index) => (
-					<BlurFade>
+			<BlurFade>
+				<h3 className="font-bold text-3xl mt-32 mb-16">
+					{t("projects")}
+				</h3>
+			</BlurFade>
+			<div className="flex flex-wrap items-stretch justify-center gap-4">
+				{projects.map((item) => (
+					<BlurFade key={item.key}>
 						<ProjectCard
 							title={item.title}
 							description={t(item.key as TranslationKeys)}
