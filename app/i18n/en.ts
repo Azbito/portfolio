@@ -4,10 +4,10 @@ export const en = {
 	success: "Sucess",
 	successCopy: "E-mail copied successfully!",
 	homeMetadataDescription: "Developer portfolio website",
-	introduction: "Software Engineer",
-	history: `<p>I am a developer with experience in C++ for <b class="text-primary">software development.</b> In the <b class="text-primary">front-end</b>, I work with ReactJS, NextJS, Remix, and Vue, always focused on enhancing the user experience with simple and functional interfaces. In the <b class="text-primary">backend</b>, I use tools like Fastify, PostgreSQL, and MySQL to create solutions that meet project needs. Additionally, in <b class="text-primary">mobile app development</b> with React Native and Flutter, I always strive to deliver something practical and accessible.<br/><br/> I also work with services like Docker for containerization and other services such as AWS, Firebase, and Cloudflare, always seeking the best tools for each situation.</p>`,
+	role: "Software Engineer",
+	history: `I'm a developer with experience in <b class="text-primary">C++/C#</b> for software development. On the front-end, I work with <b class="text-primary">ReactJS, NextJS, Remix, ElectronJS, and Vue</b>, focusing on simple, functional interfaces centered on user experience. On the back-end, I use <b class="text-primary">Fastify, ExpressJS, NodeJS, .NET, ASP.NET, PostgreSQL, MySQL, and NoSQL</b> to build efficient APIs and systems. I also work with mobile development using React Native and Flutter, aiming to deliver practical and accessible solutions. I have experience with <b class="text-primary">Docker, AWS, Firebase, and Cloudflare</b>, always selecting the best tools for each project and company.`,
 	iAm: "I am",
-	role: "Thiago",
+	name: "Thiago",
 	contactMe: "Contact",
 	projects: "Projects",
 	whoseLogo: "Logo - ",
@@ -15,7 +15,7 @@ export const en = {
 	site: "Website",
 	padlock: "Padlock",
 	privateSourceCode: "The source code for this project is private",
-  "project-metropole": "Garage system for GTA Online",
+	"project-metropole": "Garage system for GTA Online",
 	"project-ans":
 		"A comprehensive data processing system designed to handle and analyze ANS data.",
 	"project-gfchaos": `Developer of systems for a private MMORPG server, focused on implementing new features, bug fixes, and performance optimization.

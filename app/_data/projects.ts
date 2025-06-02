@@ -1,5 +1,3 @@
-import GFChaos from "~/assets/icons/gfchaos.webp"
-
 interface HrefProps {
 	name: string
 	href: string
@@ -16,23 +14,6 @@ interface ProjectsProps {
 }
 
 export const projects: ProjectsProps[] = [
-	{
-		icon: GFChaos,
-		title: "GF Chaos",
-		key: "project-gfchaos",
-		technologies: [
-			"Typescript",
-			"NextJS",
-			"ElectronJS",
-			"C++",
-			"Assembly x86",
-			"AWS",
-			"Cloudflare",
-			"Docker",
-		],
-		href: "https://gfchaos.com",
-		private: true,
-	},
 	{
 		title: "Chaosify Editor",
 		key: "project-chaosify-editor",
@@ -117,7 +98,8 @@ export const projects: ProjectsProps[] = [
 			"FastAPI",
 		],
 		href: "https://github.com/Azbito/ans-data-processor",
-	},	{
+	},
+	{
 		title: "Metropole garage",
 		key: "project-metropole",
 		private: false,
@@ -125,9 +107,9 @@ export const projects: ProjectsProps[] = [
 			"Docker",
 			"MySQL",
 			"Typescript",
-      "Lua",
-      "FiveM",
-      "ReactJS",
+			"Lua",
+			"FiveM",
+			"ReactJS",
 		],
 		href: "https://github.com/Azbito/metropole-garage",
 	},

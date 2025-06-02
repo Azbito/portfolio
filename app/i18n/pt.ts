@@ -4,20 +4,32 @@ export const pt = {
 	success: "Sucesso",
 	successCopy: "E-mail copiado com sucesso!",
 	homeMetadataDescription: "Site Portfólio de desenvolvedor",
-	introduction: "Engenheiro de Software",
-	history: `<p>Sou desenvolvedor com experiência em C++, para <b class="text-primary">desenvolvimento de softwares.</b> No <b class="text-primary">front-end</b>, trabalho com ReactJS, NextJS, Remix e Vue, sempre focado em melhorar a experiência do usuário com interfaces simples e funcionais. No <b class="text-primary">backend,</b> utilizo ferramentas como Fastify, PostgreSQL e MySQL para criar soluções que atendem às necessidades do projeto. Além disso, no <b class="text-primary">desenvolvimento de aplicativos móveis</b> utilizo React Native e Flutter, sempre buscando entregar algo prático e acessível.<br/><br/> Trabalho também com serviços como Docker para containerização e outros serviços como AWS, Firebase e Cloudflare. Sempre procurando as melhores ferramentas para cada situação.</p>`,
-	iAm: "Sou",
-	role: "Thiago",
+	role: "Engenheiro de Software",
+	history: `Sou desenvolvedor com experiência em <b>C++/C#</b> para criação de softwares. No front-end, trabalho com <b>ReactJS, NextJS, Remix, ElectronJS e Vue,</b> focando em interfaces simples, funcionais e centradas na experiência do usuário. No back-end, utilizo <b>Fastify, ExpressJS, NodeJS, .NET, ASP.NET, PostgreSQL, MySQL e NoSQL</b> para construir APIs e sistemas eficientes. Também atuo no desenvolvimento mobile com React Native e Flutter, priorizando soluções práticas e acessíveis. Tenho experiência com <b>Docker, AWS, Firebase e Cloudflare,</b> sempre escolhendo as ferramentas mais adequadas para cada projeto e para cada empresa.`,
+	iAm: "Me chamo",
+	"software-engineer": "Engenheiro de Software",
+	"fullstack-developer": "Desenvolvedor Fullstack",
+	about: "Sobre",
+	name: "Thiago",
 	contactMe: "Contato",
 	projects: "Trabalhos",
+	professionalExperience: "Experiência profissional",
 	whoseLogo: "Logo - ",
 	sourceCode: "Código fonte",
 	site: "Site",
+	now: "o momento",
 	padlock: "Cadeado",
-  "project-metropole": "Sistema de garagem para GTA Online",
+	"project-metropole": "Sistema de garagem para GTA Online",
+	"project-metropole-work":
+		"Atuo no servidor de GTA RP Metrópole na área de desenvolvimento de features e manutenção, utilizando Typescript, Lua, C#, FiveM e Metropole Framework.",
 	"project-ans":
 		"Um completo de processamento de dados projetado para lidar e analisar dados da ANS.",
 	privateSourceCode: "O código fonte desse projeto é privado",
+	"project-bood": `Responsável pelo desenvolvimento de interfaces dinâmicas;<br />
+Manutenção de código;<br />
+Responsável por ensinar desenvolvedores estagiários a programar;<br />
+Auxiliar do TL a monitorar PRs e code reviews;<br />
+Desenvolvedor principal pelo desenvolvimento do software bood pdv - software de gestão de comandas e financeiro.<br />`,
 	"project-gfchaos": `Desenvolvedor de sistemas para um servidor MMORPG privado, focado na implementação de novos recursos, correções de bugs e otimização de desempenho.
 <br/>
 Desenvolvimento e manutenção de interfaces front-end para o servidor MMORPG GFChaos, garantindo uma experiência otimizada para aproximadamente 100 jogadores online diariamente.

@@ -10,10 +10,6 @@ import type { LinksFunction } from "@remix-run/node"
 import "./tailwind.css"
 import { TranslationProvider } from "./contexts/translation"
 import { PopUpProvider } from "./contexts/popup"
-import { PopUp } from "./components/popup"
-import { usePopUp } from "./hooks/usePopUp"
-import { LanguageSelector } from "./components/selector"
-import { useTranslation } from "./hooks/useTranslation"
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -24,7 +20,7 @@ export const links: LinksFunction = () => [
 	},
 	{
 		rel: "stylesheet",
-		href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap",
+		href: "https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap",
 	},
 ]
 
@@ -49,33 +45,13 @@ export function Layout({ children }: { children: React.ReactNode }) {
 	)
 }
 
-function PopUpComponent() {
-	const { popup, closePopUp } = usePopUp()
-	return <PopUp popup={popup} closePopUp={closePopUp} />
-}
-
-function LanguageComponent() {
-	const { language, setLanguage } = useTranslation()
-
-	type LanguagesProps = "pt" | "en"
-
-	return (
-		<LanguageSelector
-			language={language as LanguagesProps}
-			setLanguage={setLanguage}
-		/>
-	)
-}
-
 export default function App() {
 	return (
 		<TranslationProvider>
 			<PopUpProvider>
-				<div className="bg-background font-jetbrains">
+				<div className="bg-background font-gravitas">
 					<Outlet />
 				</div>
-				<LanguageComponent />
-				<PopUpComponent />
 			</PopUpProvider>
 		</TranslationProvider>
 	)
