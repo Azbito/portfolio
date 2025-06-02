@@ -23,7 +23,7 @@ export const pt = {
 	"project-metropole-work":
 		"Atuo no servidor de GTA RP Metrópole na área de desenvolvimento de features e manutenção, utilizando Typescript, Lua, C#, FiveM e Metropole Framework.",
 	"project-ans":
-		"Um completo de processamento de dados projetado para lidar e analisar dados da ANS.",
+		"Uma aplicação de processamento de dados projetado para lidar e analisar dados da ANS.",
 	privateSourceCode: "O código fonte desse projeto é privado",
 	skills: "Habilidades",
 	"project-bood": `Responsável pelo desenvolvimento de interfaces dinâmicas;<br />

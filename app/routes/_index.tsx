@@ -1,6 +1,7 @@
 import type { MetaFunction } from "@remix-run/node"
 import { ProfessionalExperience } from "~/components/experience"
 import { Intro } from "~/components/intro"
+import { Projects } from "~/components/projects"
 import { Skills } from "~/components/skills"
 import { translations } from "~/i18n"
 
@@ -17,6 +18,7 @@ export default function Index() {
 			<Intro />
 			<ProfessionalExperience />
 			<Skills />
+			<Projects />
 		</div>
 	)
 }

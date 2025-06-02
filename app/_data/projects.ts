@@ -3,8 +3,7 @@ interface HrefProps {
 	href: string
 }
 
-interface ProjectsProps {
-	icon?: string
+export interface ProjectsProps {
 	title: string
 	key: string
 	technologies: string[]
@@ -14,6 +13,60 @@ interface ProjectsProps {
 }
 
 export const projects: ProjectsProps[] = [
+	{
+		title: "NES Emulator",
+		key: "project-nes",
+		technologies: ["C++", "CPU6502", "JIT"],
+		private: false,
+		href: "https://github.com/Azbito/nes-emulator",
+	},
+	{
+		title: "bood pdv",
+		key: "project-bood-pdv",
+		technologies: [
+			"Javascript",
+			"ElectronJS",
+			"AWS Lambda",
+			"AWS Gateway",
+			"AWS S3",
+		],
+		private: true,
+	},
+	{
+		title: "Hardware Pulse CLI",
+		key: "project-hardware",
+		private: false,
+		technologies: ["GoLang"],
+		href: "https://github.com/Azbito/hardware-pulse-cli",
+	},
+	{
+		title: "ANS Data Processor",
+		key: "project-ans",
+		private: false,
+		technologies: [
+			"Docker",
+			"Python",
+			"VueJS",
+			"Cloudflare R2",
+			"PostgreSQL",
+			"FastAPI",
+		],
+		href: "https://github.com/Azbito/ans-data-processor",
+	},
+	{
+		title: "Metropole Garage",
+		key: "project-metropole",
+		private: false,
+		technologies: [
+			"Docker",
+			"MySQL",
+			"Typescript",
+			"Lua",
+			"FiveM",
+			"ReactJS",
+		],
+		href: "https://github.com/Azbito/metropole-garage",
+	},
 	{
 		title: "Chaosify Editor",
 		key: "project-chaosify-editor",
@@ -34,31 +87,13 @@ export const projects: ProjectsProps[] = [
 		technologies: ["Typescript", "NextJS", "Cloudflare R2"],
 	},
 	{
-		title: "bood pdv",
-		key: "project-bood-pdv",
-		technologies: [
-			"Javascript",
-			"ElectronJS",
-			"AWS Lambda",
-			"AWS Gateway",
-			"AWS S3",
-		],
-		private: true,
-	},
-	{
 		title: "FindGyms",
 		key: "project-gym",
 		private: false,
 		href: "https://github.com/Azbito/nodejs-solid",
 		technologies: ["Typescript", "Prisma", "NodeJS", "SOLID"],
 	},
-	{
-		title: "NES Emulator",
-		key: "project-nes",
-		technologies: ["C++", "CPU6502", "JIT"],
-		private: false,
-		href: "https://github.com/Azbito/nes-emulator",
-	},
+
 	{
 		title: "Desafio Pigz",
 		key: "project-pigz",
@@ -66,13 +101,7 @@ export const projects: ProjectsProps[] = [
 		private: false,
 		href: "https://github.com/Azbito/desafio-frontend-mobile",
 	},
-	{
-		title: "Hardware Pulse CLI",
-		key: "project-hardware",
-		private: false,
-		technologies: ["GoLang"],
-		href: "https://github.com/Azbito/hardware-pulse-cli",
-	},
+
 	{
 		title: "Fórum",
 		key: "project-forum",
@@ -84,33 +113,5 @@ export const projects: ProjectsProps[] = [
 				href: "https://github.com/Azbito/forum-jwt-study",
 			},
 		],
-	},
-	{
-		title: "ANS Data Processor",
-		key: "project-ans",
-		private: false,
-		technologies: [
-			"Docker",
-			"Python",
-			"VueJS",
-			"Cloudflare R2",
-			"PostgreSQL",
-			"FastAPI",
-		],
-		href: "https://github.com/Azbito/ans-data-processor",
-	},
-	{
-		title: "Metropole garage",
-		key: "project-metropole",
-		private: false,
-		technologies: [
-			"Docker",
-			"MySQL",
-			"Typescript",
-			"Lua",
-			"FiveM",
-			"ReactJS",
-		],
-		href: "https://github.com/Azbito/metropole-garage",
 	},
 ]
