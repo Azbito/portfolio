@@ -32,7 +32,7 @@ function ProfessionalCard({
 			<div className="flex items-center gap-4 w-full">
 				<div
 					className={cn(
-						"shadow-md overflow-hidden w-18 h-18 rounded-full flex items-center justify-center",
+						"shadow-md overflow-hidden w-18 h-18 max-[500px]:w-10 max-[500px]:h-10 max-[500px]:min-w-10 max-[500px]:min-h-10 rounded-full flex items-center justify-center",
 						!title?.includes("bood")
 							? "dark:bg-white bg-black"
 							: "bg-white",

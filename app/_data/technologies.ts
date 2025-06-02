@@ -105,7 +105,7 @@ export const technologies: Technologies[] = [
 		icon: TECHNOLOGIES_ASSETS_PATH("prisma"),
 	},
 	{
-		id: 104,
+		id: 1054,
 		name: "PostgreSQL",
 		icon: TECHNOLOGIES_ASSETS_PATH("postgresql"),
 	},

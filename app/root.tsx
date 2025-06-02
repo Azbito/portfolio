@@ -10,6 +10,7 @@ import type { LinksFunction } from "@remix-run/node"
 import "./tailwind.css"
 import { TranslationProvider } from "./contexts/translation"
 import { PopUpProvider } from "./contexts/popup"
+import { Dock } from "./components/navbar"
 
 export const links: LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -52,6 +53,7 @@ export default function App() {
 				<div className="bg-background font-gravitas">
 					<Outlet />
 				</div>
+				<Dock />
 			</PopUpProvider>
 		</TranslationProvider>
 	)

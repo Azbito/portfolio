@@ -18,6 +18,8 @@ export const pt = {
 	sourceCode: "Código fonte",
 	site: "Site",
 	now: "o momento",
+	changeTheme: "Trocar tema",
+	changeLanguage: "Trocar idioma",
 	padlock: "Cadeado",
 	"project-metropole": "Sistema de garagem para GTA Online",
 	"project-metropole-work":

@@ -22,7 +22,7 @@ function ProjectCard({
 	const { t } = useTranslation()
 
 	return (
-		<Card className="px-8 w-100 h-full flex flex-col items-stretch justify-between transition-all cursor-default hover:scale-105">
+		<Card className="h-full flex flex-col justify-between px-8 transition-all cursor-default hover:scale-105">
 			<div>
 				<h4 className="font-bold text-xl">{title}</h4>
 				{description.includes("<") ? (
@@ -31,7 +31,7 @@ function ProjectCard({
 					<p>{description}</p>
 				)}
 			</div>
-			<div className="flex flex-col gap-4">
+			<div className="flex flex-col gap-4 mt-4">
 				<div className="flex gap-2 flex-wrap">
 					{technologies.map((item) => (
 						<Badge key={item}>{item}</Badge>
@@ -58,7 +58,7 @@ export function Projects() {
 					{t("projects")}
 				</h3>
 			</BlurFade>
-			<div className="flex flex-wrap items-stretch justify-center gap-4">
+			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 				{projects.map((item) => (
 					<BlurFade key={item.key}>
 						<ProjectCard

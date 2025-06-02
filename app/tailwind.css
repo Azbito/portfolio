@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "react-flagpack/dist/style.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -128,10 +129,13 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+
 	body {
-		@apply bg-background text-foreground;
+		@apply bg-background;
 		font-family: "Space Grotesk", sans-serif;
-		color: var(--color-text);
+		color: var(--foreground);
+
 		padding: 1rem;
+		word-break: break-word;
 	}
 }
