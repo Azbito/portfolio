@@ -12,7 +12,7 @@ export function Intro() {
 	const mobile = useMediaQuery("(max-width: 1000px)")
 
 	return (
-		<div className="flex gap-4 w-full max-[1000px]:flex-col max-w-screen-xl">
+		<div className="flex gap-4 w-full max-[1000px]:flex-col">
 			{!mobile && (
 				<BlurFade delay={0.4}>
 					<Avatar src={Me} />
