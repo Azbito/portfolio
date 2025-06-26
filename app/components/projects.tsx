@@ -13,11 +13,13 @@ function ProjectCard({
 	description,
 	technologies,
 	isPrivate,
+	link,
 }: {
 	title: string
 	technologies: string[]
 	description: string
 	isPrivate: boolean
+	link: string
 }) {
 	const { t } = useTranslation()
 
@@ -38,7 +40,7 @@ function ProjectCard({
 					))}
 				</div>
 				{!isPrivate && (
-					<Button>
+					<Button onClick={() => open(link)}>
 						<GitBranch />
 						{t("sourceCode")}
 					</Button>
@@ -66,6 +68,7 @@ export function Projects() {
 							description={t(item.key as TranslationKeys)}
 							technologies={item.technologies}
 							isPrivate={item.private}
+							link={item?.href || ""}
 						/>
 					</BlurFade>
 				))}

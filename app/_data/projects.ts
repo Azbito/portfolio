@@ -101,17 +101,4 @@ export const projects: ProjectsProps[] = [
 		private: false,
 		href: "https://github.com/Azbito/desafio-frontend-mobile",
 	},
-
-	{
-		title: "Fórum",
-		key: "project-forum",
-		technologies: ["Fastify", "Typescript", "Prisma", "AWS"],
-		private: false,
-		links: [
-			{
-				name: "Back-end",
-				href: "https://github.com/Azbito/forum-jwt-study",
-			},
-		],
-	},
 ]
