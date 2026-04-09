@@ -23,7 +23,7 @@ export const pt = {
 	padlock: "Cadeado",
 	"project-metropole": "Sistema de garagem para GTA Online",
 	"project-metropole-work":
-		"Atuo no servidor de GTA RP Metrópole na área de desenvolvimento de features e manutenção, utilizando Typescript, Lua, C#, FiveM e Metropole Framework.",
+		"Desenvolvimento e manutenção de sistemas utilizando framework empresarial, incluindo interfaces, backend e scripts para o servidor. Atuação na revisão de pull requests sempre que necessário, participação ativa na concepção e análise técnica de novas funcionalidades, implementação de correções emergenciais (hotfixes) e investigação de falhas/crashes complexos por meio de técnicas de engenharia reversa e análise técnica avançada.",
 	"project-ans":
 		"Uma aplicação de processamento de dados projetado para lidar e analisar dados da ANS.",
 	privateSourceCode: "O código fonte desse projeto é privado",

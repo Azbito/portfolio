@@ -23,7 +23,7 @@ export const en = {
 	padlock: "Padlock",
 	"project-metropole": "Garage system for GTA Online",
 	"project-metropole-work":
-		"I work on the GTA RP Metropole server in the development area for features and maintenance, using Typescript, Lua, C#, FiveM and Metropole Framework.",
+		"Development and maintenance of systems using an enterprise framework, including interfaces, backend, and server-side scripts. Responsible for reviewing pull requests when necessary, actively participating in the design and technical analysis of new features, implementing emergency hotfixes, and investigating complex failures/crashes through reverse engineering techniques and advanced technical analysis.",
 	"project-ans":
 		"A data processing application designed to handle and analyze ANS data.",
 	privateSourceCode: "The source code for this project is private",

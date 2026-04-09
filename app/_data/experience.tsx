@@ -43,11 +43,15 @@ export const experiences: ExperiencesProps[] = [
 		technologies: [
 			"Typescript",
 			"ReactJS",
+			"Next.JS",
+			"Lua",
 			"FiveM",
 			"C#",
 			".NET",
+			"ASP.NET",
+			"Entity Framework",
 			"Docker",
-			"Lua",
+			"Azure",
 		],
 		links: [
 			{

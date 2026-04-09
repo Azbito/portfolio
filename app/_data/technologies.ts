@@ -47,8 +47,6 @@ export const technologies: Technologies[] = [
 		icon: TECHNOLOGIES_ASSETS_PATH("python"),
 	},
 	{ id: 120, name: "C#", icon: TECHNOLOGIES_ASSETS_PATH("csharp") },
-	{ id: 19, name: "Dart", icon: TECHNOLOGIES_ASSETS_PATH("dart") },
-	{ id: 11, name: "Flutter", icon: TECHNOLOGIES_ASSETS_PATH("flutter") },
 	{
 		id: 6,
 		name: "React",
@@ -123,5 +121,10 @@ export const technologies: Technologies[] = [
 		id: 102,
 		name: "DynamoDB",
 		icon: TECHNOLOGIES_ASSETS_PATH("dynamodb"),
+	},
+	{
+		id: 200,
+		name: "Azure",
+		icon: TECHNOLOGIES_ASSETS_PATH("azure"),
 	},
 ]

@@ -10,11 +10,11 @@ export function Skills() {
 		<div className="flex flex-col gap-4 w-full">
 			<h3 className="font-bold text-3xl mt-32">{t("skills")}</h3>
 
-			<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+			<div className="grid grid-cols-[repeat(auto-fit,10rem)] gap-4 justify-start">
 				{technologies.map((item) => (
 					<Card
 						key={item.id}
-						className="shadow-lg aspect-square flex items-center justify-center flex-col text-center rounded-xl transition-all hover:-translate-y-2"
+						className="shadow-lg w-40 h-40 flex items-center justify-center flex-col text-center rounded-xl transition-all hover:-translate-y-2"
 					>
 						<div className="w-12 h-12">
 							<img
