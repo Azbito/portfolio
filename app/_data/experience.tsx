@@ -44,6 +44,7 @@ export const experiences: ExperiencesProps[] = [
 			"Typescript",
 			"ReactJS",
 			"Next.JS",
+			"Tanstack",
 			"Lua",
 			"FiveM",
 			"C#",
