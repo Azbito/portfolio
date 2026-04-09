@@ -52,6 +52,9 @@ export const experiences: ExperiencesProps[] = [
 			"Entity Framework",
 			"Docker",
 			"Azure",
+			"RabbitMQ",
+			"Redis",
+			"MySQL",
 		],
 		links: [
 			{
